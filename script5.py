@@ -123,6 +123,76 @@ print(e9)
 
 
 
+# program  1
+str = "chinmay deshpande:7709192441"
+print(str)
+e = re.search(r'\d+',str)
+print(e.group())
+
+#  '\w'  --> [A-Z a-z  0-9]
+#   '\W' --> Non alphanumeric
+#   '\d' --> digit 
+#   '\D' --> non-digit
+
+
+e = re.search(r'\D+',str)
+print(e.group())
+
+f = re.search(r'[\w]* [\w]*',str)
+if f:
+    print(f.group())
+else:
+    print("pattern not found")
+
+# program 2
+str = "anil akhil ajay arun arti ankur arundhati abhijeet"
+g = re.findall(r'\ba[nkr][\w]*',str)
+print(g)
+
+# program 3
+str = 'chinmay 07-11-1989 amol 19-09-1990 mayuri 21-01-1989'
+f = re.findall(r'\d{2}-\d{2}-\d{4}',str)
+print(f)
+
+# program 4
+str = 'chinmay 7-11-1989 amol 19-09-1990 mayuri 21-01-1989'
+f = re.findall(r'\d{1,2}-\d{2}-\d{4}',str)
+print(f)
+
+# program 5
+str  = "hello world"
+g = re.search(r'^he',str)
+print(g.group())
+
+# program 6
+str  = "hello world"
+g = re.search(r'world$',str)
+print(g.group())
+
+#program 7
+str  = "hello World"
+g = re.search(r'world$',str,re.IGNORECASE)
+print(g.group())
+
+# program 8 
+students = "I got 80 marks I got 100 marks"
+print(re.findall(r'\d{2,3}',students))
+
+
+students = "Amol got 80 marks Mayuri got 100 marks"
+f = re.findall(r'[A-Z][a-z]*',students)
+print(f)
+
+#program 9
+
+str = 'The morning meeting will be scheduled at 8am or 9am , evening at 8pm or 9pm'
+#[8am,9am,8pm,9pm]
+
+
+
+
+
+
 
 
 
