@@ -65,6 +65,57 @@ print(type(l))
 
 # lambda
 
+def add(x,y):
+    return x + y
 
+e = add(12,4)
+print(e)
 
+addB = lambda x,y:x+y
+e2 = addB(21,4)
+print(e2)
+e = lambda x : x*x 
+e3 = e(3)
+print(e3)
 
+names = ["amit","amol","akay","shivani"]
+def changeName(lst):
+    #lst = names 
+    lst[0] = "ajay"
+    return lst
+
+e4 = changeName(names)
+print(e4)
+print(names)
+
+# city = ["pune","nagpur","kolkata"]
+# city2 = city 
+# city2[0] = "wardha"
+# print(city)
+# print(city2)
+
+lstA = [1,2,3,4,5]
+n = []
+for i in lstA:
+    n.append(i*5)
+print(n)
+
+# list comprehension -- o/p - list
+#[expression:loop:condition]
+e4 = [i * 5 for i in lstA]
+print(e4)
+lstB = [1,2,3,4,5,6,7,8,9,10]
+e5 = [i* i for i in lstB]
+print(e5)
+
+lstC = [44,55,66,77,33,44,55,66,77,11,22,33,7,8,9]
+listD= []
+for x in lstC:
+    if x % 2 == 0:
+        listD.append(x)
+print(listD)
+
+#[expression:loop:condition]
+e6 =  [x for x in lstC if x % 2 == 0]
+print(e6)
+        
