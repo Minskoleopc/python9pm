@@ -70,10 +70,4 @@ print(ramayan.pages + mahabharat.pages)
 print(mahabharat + ramayan)
 
 
-
-
-
-# Method overload 
-
-
 # Method overriding

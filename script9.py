@@ -33,7 +33,6 @@ e7 = list(filter(lambda x : x > 70,marks))
 print(e7)
 
 # reduce
-
 from functools import reduce
 lista = [11,22,33]
 e = reduce(lambda acc,el:acc+el,lista,5)

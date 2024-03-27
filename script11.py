@@ -97,7 +97,9 @@ def myfunction4():
 myfunction4()
 print(h) # global variable
 
-
+# program 10
+# local varible 
+# access function
 
 
 

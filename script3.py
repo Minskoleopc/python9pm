@@ -148,7 +148,6 @@ x = setQ1.issubset(setQ2)
 print(x)
 
 # program6
-
 setA = {11,22,33,88}
 setB = {77,88,99}
 h = setA.isdisjoint(setB)

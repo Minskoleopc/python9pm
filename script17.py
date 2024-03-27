@@ -12,6 +12,7 @@ class C(object):
     def add(self):
         print("C class method is called") # 6
 
+
 class X(A,B):
     def add(self):
         print("X class method") #2
