@@ -54,26 +54,3 @@
 # except AssertionError:
 #     print("condition not matched")
 # print("bye")
-
-class lowBalance(Exception):
-    def __init__(self,msg):
-        self.msg = msg
-
-def check(dict):
-    for k,v in dict.items():
-        if(v < 20000):
-            raise lowBalance("Balance is low")
-try:
-    names = {"snehal":100000 , "hrushali":400000,"ninad":388888,"chinmay":335}
-    check(names)
-    print(names)
-except lowBalance as msg:
-    print(msg)
-
-
-    
-
-
-
-
-
