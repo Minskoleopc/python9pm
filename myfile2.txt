@@ -1,1 +1,10 @@
+chinmay& C:/Users/Lenovo/AppData/Local/Programs/Python/Python312/python.exe c:/Users/Lenovo/Desktop/python9pm/script25.py
 chinmay
+poorva
+sarika
+mayuri
+ninad
+vijeet
+ram
+sham
+satish

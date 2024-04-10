@@ -58,13 +58,110 @@
 #         f.close()
 
 # program4
+# f = open('myfile3.txt',"w")
+# while str != "@":
+#     str = input('Enter the name'+'\n')
+#     if str != '@':
+#         f.write(str + '\n')
+# f.close()
 
-f = open('myfile3.txt',"w")
-while str != "@":
-    str = input('Enter the name'+'\n')
-    if str != '@':
-        f.write(str + '\n')
+# program 5
+# r w
+# f = open('myfile2.txt','a+')
+# while str != "@":
+#     str = input("Enter the names")
+#     if str != '@':
+#         f.write(str + "\n")
+# f.seek(0,0)
+# str2 = f.read()
+# print(str2)
+# f.close()
+
+# program 2
+
+import os , sys
+# fname = input('Enter the filename: ')
+# if os.path.isfile(fname):
+#     f = open(fname,'r')
+# else:
+#     sys.exit()
+# print('The file contents are: ')
+# str = f.read()
+# print(str)
+# f.close()
+
+
+#count word character and lines
+
+fname = input('Enter the filename: ')
+if os.path.isfile(fname):
+    f = open(fname,'r')
+else:
+    print("file does not exist")
+    sys.exit()
+
+cc = 0
+cw = 0
+cl = 0
+
+for line in f:
+    cl = cl + 1
+    list = line.split() #["chinmay","learning" ,"js"] 
+    cw = cw + len(list)
+    cc = cc + len(line)
+print(cl)
+print(cw)
+print(cc)
+
 f.close()
+
+
+f.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
